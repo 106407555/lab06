@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="en">
+<?php include 'header.inc'; ?>
 <?php
 session_start();
 $username = $_POST['username'];
@@ -9,3 +12,5 @@ header('Location: welcome.php');
 echo "Invalid login. <a href='login.html'>Try again</a>";
 }
 ?>
+<?php include 'footer.inc'; ?>
+</html>
